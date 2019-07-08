@@ -7,8 +7,6 @@ interface em que se possa realizar pedidos utilizando um _tablet_, e enviá-los
 para a cozinha para que sejam preparados de forma ordenada e eficiente (através
 de um _backend_ que os detalhes serão dados mais adiante).
 
-![burger-queen](https://user-images.githubusercontent.com/110297/42118136-996b4a52-7bc6-11e8-8a03-ada078754715.jpg)
-
 Estas são as informações que temos do cliente:
 
 > Somos **Burger Queen**, um fast food 24hrs.
@@ -152,6 +150,14 @@ Eu como garçom/garçonete quero ver os pedidos que estão prontos para entregá
 * Você fez _testes_ de usabilidade e incorporou o _feedback_ do usuário.
 * Você deu deploy de seu aplicativo e marcou sua versão (tag git).
 * Os dados devem ser mantidos intactos, mesmo depois que um pedido terminado. Tudo isso para poder ter estatísticas no futuro.
+
+***
+
+#### Email cadastrado para testes
+
+Caso não queira realizar cadastro para fazer teste, utilize os já cadastrados:
+salao@teste.com.br - senha: 123123
+cozinha@teste.com.br - senha 123123
 
 ***
 
