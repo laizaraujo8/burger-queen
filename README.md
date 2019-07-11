@@ -65,6 +65,7 @@ O aplicativo deve ser um _Single Page App_. Os pedidos serão enviados por meio 
 
 Precisamos pensar bem sobre o UX para aqueles que vão receber os pedidos, o tamanho e a aparência dos botões, a visibilidade do estado atual do pedido, etc.
 
+***
 
 #### [História de usuário 1] Usuário deve ter seu perfil (login/senha) para acessar o sistema.
 
@@ -127,6 +128,6 @@ Eu como garçom/garçonete quero ver os pedidos que estão prontos para entregá
 #### Email cadastrado para testes
 
 Caso não queira realizar cadastro para fazer teste, utilize os já cadastrados:
-joao@gmail.com - senha: 123123
-maria@gmail.com - senha 123123
+joao@gmail.com - senha: 123123 (salão)
+maria@gmail.com - senha 123123 (cozinha)
 
