@@ -79,14 +79,6 @@ O que deve acontecer para satisfazer as necessidades do usuário?
 * Criar tipo de usuário (cozinha / salão).
 * Entrar na tela correta para cada usuário.
 
-##### Definição de pronto
-
-O acordado abaixo deve acontecer para dizer que a história está terminada:
-
-* Você deve ter recebido _code review_ de pelo menos uma parceira.
-* Você fez _testes_ de usabilidade e incorporou o _feedback_ do usuário.
-* Você deu deploy de seu aplicativo e marcou sua versão (tag git).
-
 ***
 
 #### [História de usuário 2] Garçom/Garçonete deve ser capaz de anotar o pedido do cliente
@@ -107,14 +99,6 @@ O que deve acontecer para satisfazer as necessidades do usuário?
 * Enviar o pedido para a cozinha (guardar em algum banco de dados).
 * Funcionar bem e se adequar a um _tablet_.
 
-##### Definição de pronto
-
-O acordado abaixo deve acontecer para dizer que a história está terminada:
-
-* Você deve ter recebido _code review_ de pelo menos uma parceira.
-* Você fez _testes_ de usabilidade e incorporou o _feedback_ do usuário.
-* Você deu deploy de seu aplicativo e marcou sua versão (tag git).
-
 ***
 
 #### [História de usuário 3] Chefe de cozinha deve ver os pedidos
@@ -127,12 +111,6 @@ Eu como chefe de cozinha quero ver os pedidos dos clientes em ordem, poder marca
 * Marcar os pedidos que foram preparados e estão prontos para serem servidos.
 * Ver o tempo que levou para preparar o pedido desde que chegou, até ser marcado como concluído.
 
-##### Definição de pronto
-
-* Você deve ter recebido _code review_ de pelo menos uma parceira.
-* Você fez _testes_ de usabilidade e incorporou o _feedback_ do usuário.
-* Você deu deploy de seu aplicativo e marcou sua versão (tag git).
-
 ***
 
 #### [História de usuário 4] Garçom/Garçonete deve ver os pedidos prontos para servir
@@ -144,87 +122,11 @@ Eu como garçom/garçonete quero ver os pedidos que estão prontos para entregá
 * Ver a lista de pedidos prontos para servir.
 * Marque os pedidos que foram entregues.
 
-##### Definição de pronto
-
-* Você deve ter recebido _code review_ de pelo menos uma parceira.
-* Você fez _testes_ de usabilidade e incorporou o _feedback_ do usuário.
-* Você deu deploy de seu aplicativo e marcou sua versão (tag git).
-* Os dados devem ser mantidos intactos, mesmo depois que um pedido terminado. Tudo isso para poder ter estatísticas no futuro.
-
 ***
 
 #### Email cadastrado para testes
 
 Caso não queira realizar cadastro para fazer teste, utilize os já cadastrados:
-salao@teste.com.br - senha: 123123
-cozinha@teste.com.br - senha 123123
+joao@gmail.com - senha: 123123
+maria@gmail.com - senha 123123
 
-***
-
-### Primeros passos
-
-1. O primeiro passo deste projeto deve ser converter o menu descrito pelo cliente em uma estrutura JSON para mais tarde _printar_ na tela.
-
-2. Faça um _fork_ deste repositório (no GitHub).
-
-3. Clone seu _fork_ no seu computador:
-
-   ```sh
-   git clone git@github.com:<tu-usuario-de-github>/<cohortid>-burger-queen.git
-   cd <cohortid>-burger-queen
-   ```
-
-4. Crie uma branch da `master` para começar a trabalhar. Por exemplo:
-
-   ```sh
-   git checkout -b develop
-   ```
-
-5. Crie um projeto no [Firebase](https://firebase.google.com/)
-
-6. Habilite o Firestore (_começar em modo bloqueado_) nas "Bases de Dados" de [Firebase console](https://console.firebase.google.com/).
-
-7. Instale o utilitário de linha de comando do Firebase:
-
-   ```sh
-   npm i -g firebase-tools
-   ```
-
-8. Adicione o ambiente de produção para fazer o deploy:
-
-   ```sh
-   firebase use --add
-   ```
-
-9. Instale dependências de cloud functions:
-
-   ```sh
-   # usando yarn
-   cd functions && yarn && cd ..
-   # alternativamente, usando npm
-   cd functions && npm install && cd ..
-   ```
-
-10. Rode o comando: `firebase deploy`
-
-11. Neste ponto, você pode começar com o _front-end_ :wink:
-
-***
-
-Nota para a utilização do `create-react-app`:
-
-Se você tentar usar o `create-react-app` no diretório do projeto, você receberá
-um erro dizendo que há arquivos que podem apresentar um conflito. Para evitar
-esse problema você pode criar um novo aplicativo usando `create-react-app` e a
-partir daí _ junte com a pasta do projeto:
-
-```sh
-# se estava na pasta do projeto, fomos para a pasta acima
-cd ..
-
-create-react-app burger-queen-tmp
-cp -r burger-queen/* burger-queen-tmp/
-cp -r burger-queen-tmp/.gitignore burger-queen-tmp/* burger-queen/
-rm -rf burger-queen-tmp
-cd burger-queen
-```
